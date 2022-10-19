@@ -36,6 +36,7 @@
 		"@types/styled-components": "^5.1.26",
 		"@vitejs/plugin-react": "^2.1.0",
 		"babel-loader": "^8.2.5",
+		"chromatic": "^6.10.2",
 		"msw": "^0.47.4",
 		"msw-storybook-addon": "^1.6.3",
 		"typescript": "^4.6.4",
