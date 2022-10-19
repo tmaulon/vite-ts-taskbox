@@ -69,6 +69,8 @@ const ListItem = styled.article`
 
 	& input[type="text"] {
 		background: #ffffff;
+
+		background-color: red;
 		width: 100%;
 	}
 
