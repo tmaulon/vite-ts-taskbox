@@ -194,6 +194,8 @@ const StyledInput = styled.input`
 		color: #333;
 		outline: none;
 	}
+
+	text-overflow: ellipsis;
 `;
 
 const PinButton = styled.button`
