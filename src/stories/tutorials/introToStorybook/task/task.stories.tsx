@@ -5,6 +5,43 @@ import { Task } from "@ui/task/task";
 export default {
 	component: Task,
 	title: "Tutorials/IntroToStorybook/Task",
+	parameters: {
+		design: [
+			{
+				name: "Figma Preview",
+				type: "figma",
+				url: "https://www.figma.com/file/Klm6pxIZSaJFiOMX5FpTul9F/storybook-addon-designs-sample",
+			},
+			// {
+			// 	// does not work because of auth access need
+			// 	name: "Zeplin Preview",
+			// 	type: "iframe",
+			// 	url: "https://app.zeplin.io/project/5cff6a717bb35419d69e2489/styleguide/components?seid=60fada589879f616edde9381",
+			// },
+			// { name: "Lien Zeplin", type: "link", url: "https://zpl.io/jZeZmRm" },
+		],
+		// zeplinLink: [
+		// 	{
+		// 		name: "Buttons",
+		// 		link: "https://zpl.io/jZeZmRm",
+		// 	},
+		// 	{
+		// 		name: "Colors Palette",
+		// 		link: "https://app.zeplin.io/project/5cff6a717bb35419d69e2489/styleguide/colors",
+		// 	},
+		// 	// {
+		// 	// 	name: "Mobile",
+		// 	// 	link: "zpl://components?pid=pid1&coid=coid3",
+		// 	// },
+		// ],
+		// zeplinLink:
+		// 	"https://app.zeplin.io/project/5cff6a717bb35419d69e2489/styleguide/colors",
+
+		// design: {
+		// 	type: "figma",
+		// 	url: "https://www.figma.com/file/Klm6pxIZSaJFiOMX5FpTul9F/storybook-addon-designs-sample",
+		// },
+	},
 } as ComponentMeta<typeof Task>;
 
 const Template: ComponentStory<typeof Task> = (args) => <Task {...args} />;

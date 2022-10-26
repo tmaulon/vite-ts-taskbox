@@ -1,6 +1,5 @@
 const { loadConfigFromFile, mergeConfig } = require("vite");
 const path = require("path");
-// const tsconfigPaths = require("vite-tsconfig-paths");
 const tsconfigPaths = require("vite-tsconfig-paths");
 
 module.exports = {
@@ -10,6 +9,27 @@ module.exports = {
 		"@storybook/addon-essentials",
 		"@storybook/addon-interactions",
 		"@storybook/addon-a11y",
+		{
+			// useless
+			name: "@storybook/addon-storysource",
+			options: {
+				rule: {
+					// test: [/\.stories\.jsx?$/], This is default
+					include: [path.resolve(__dirname, "../src")], // You can specify directories
+				},
+				loaderOptions: {
+					prettierConfig: {
+						singleQuote: false,
+						useTabs: true,
+						printWidth: 120,
+						trailingComma: "all",
+						jsxBracketSameLine: true,
+					},
+				},
+			},
+		},
+		"storybook-addon-designs",
+		"storybook-zeplin/register",
 	],
 	framework: "@storybook/react",
 	core: {
